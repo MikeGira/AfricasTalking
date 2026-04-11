@@ -1,0 +1,23 @@
+{
+  "name": "opsynth",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "africastalking": "^0.7.4",
+    "dotenv": "^17.4.1"
+  },
+  "overrides": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "esm": "^3.2.25"
+  }
+}

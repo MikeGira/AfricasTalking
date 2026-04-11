@@ -1,0 +1,292 @@
+2026-04-10 06:38:49,827 [WARNING]  * Debugger is active!
+2026-04-10 06:38:49,834 [INFO]  * Debugger PIN: 581-262-269
+2026-04-10 06:39:17,331 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-10 06:39:17,332 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-10 06:39:17,335 [INFO]  * Restarting with stat
+2026-04-10 06:39:17,678 [WARNING]  * Debugger is active!
+2026-04-10 06:39:17,684 [INFO]  * Debugger PIN: 581-262-269
+2026-04-10 06:39:32,702 [INFO] Bot Action: Unknown intent from +250788285524: 'THIS IS A TEST ON THE AFRICA'S TALKING SIMULATOR IN THE SANDBOX ENVIRONMENT TO SEE IF I CAN SEND AN SMS FROM THE SIMULATOR TO AN EXTERNAL ENDPOINT.'
+2026-04-10 06:39:32,706 [INFO] 127.0.0.1 - - [10/Apr/2026 06:39:32] "POST /incoming/sms HTTP/1.1" 200 -
+2026-04-10 06:47:32,783 [INFO]  * Detected change in 'D:\\Projects\\BridgeUp\\AfricasTalking\\callback_app.py', reloading
+2026-04-10 06:47:32,839 [INFO]  * Restarting with stat
+2026-04-10 06:47:33,243 [WARNING]  * Debugger is active!
+2026-04-10 06:47:33,250 [INFO]  * Debugger PIN: 581-262-269
+2026-04-10 06:52:00,392 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-10 06:52:00,392 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-10 06:52:00,394 [INFO]  * Restarting with stat
+2026-04-10 06:52:00,751 [WARNING]  * Debugger is active!
+2026-04-10 06:52:00,758 [INFO]  * Debugger PIN: 581-262-269
+2026-04-10 06:52:22,703 [INFO] Incoming SMS from +250788285524: This is a test on the Africa's Talking simulator in the sandbox environment to see if I can send an SMS from the simulator to an external endpoint.
+2026-04-10 06:52:22,703 [INFO] Bot Event: Passing complex query to AI: This is a test on th...
+2026-04-10 06:52:22,704 [INFO] 127.0.0.1 - - [10/Apr/2026 06:52:22] "POST /incoming/sms HTTP/1.1" 200 -
+2026-04-10 07:25:47,493 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-10 07:25:47,496 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-10 07:25:47,500 [INFO]  * Restarting with stat
+2026-04-10 07:25:49,616 [WARNING]  * Debugger is active!
+2026-04-10 07:25:49,621 [INFO]  * Debugger PIN: 581-262-269
+2026-04-10 07:26:21,800 [INFO] Incoming SMS from +250788285524: Hey OPSYNTH, why is automation important for logistics in Toronto?
+2026-04-10 07:26:21,801 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-10 07:26:22,039 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-04-10 07:26:22,044 [ERROR] AI Generation Error: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-3-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-04-10 07:26:22,046 [INFO] 127.0.0.1 - - [10/Apr/2026 07:26:22] "POST /incoming/sms HTTP/1.1" 200 -
+2026-04-10 07:34:44,902 [INFO]  * Detected change in 'D:\\Projects\\BridgeUp\\AfricasTalking\\callback_app.py', reloading
+2026-04-10 07:34:45,210 [INFO]  * Restarting with stat
+2026-04-10 07:35:10,686 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-10 07:35:10,687 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-10 07:35:10,696 [INFO]  * Restarting with stat
+2026-04-10 07:35:12,882 [WARNING]  * Debugger is active!
+2026-04-10 07:35:12,886 [INFO]  * Debugger PIN: 581-262-269
+2026-04-10 07:35:26,517 [INFO] Incoming SMS from +250788285524: Hey OPSYNTH, why is automation important for logistics in Toronto?
+2026-04-10 07:35:26,517 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-10 07:35:58,985 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-10 07:35:58,988 [INFO] AI Response for +250788285524: Automation tackles GTA traffic, cuts labour costs, and speeds up deliveries. It’s vital for scaling Toronto’s fast-paced supply chain.
+2026-04-10 07:35:58,988 [INFO] SMS to +250788285524: Automation tackles GTA traffic, cuts labour costs, and speeds up deliveries. It’s vital for scaling Toronto’s fast-paced supply chain.
+2026-04-10 07:35:58,988 [INFO] 127.0.0.1 - - [10/Apr/2026 07:35:58] "POST /incoming/sms HTTP/1.1" 200 -
+2026-04-10 07:36:55,796 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-10 07:36:55,798 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-10 07:36:55,802 [INFO]  * Restarting with stat
+2026-04-10 07:36:58,118 [WARNING]  * Debugger is active!
+2026-04-10 07:36:58,123 [INFO]  * Debugger PIN: 581-262-269
+2026-04-10 07:37:17,699 [INFO] Incoming SMS from +250788285524: Hey OPSYNTH, why is automation important for logistics in Toronto?
+2026-04-10 07:37:17,699 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-10 07:37:21,615 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-10 07:37:21,619 [INFO] AI Response for +250788285524: It cuts costs and beats Toronto traffic, ensuring faster, 24/7 deliveries in Canada's largest logistics hub.
+2026-04-10 07:37:21,619 [INFO] SMS to +250788285524: It cuts costs and beats Toronto traffic, ensuring faster, 24/7 deliveries in Canada's largest logistics hub.
+2026-04-10 07:37:21,621 [INFO] 127.0.0.1 - - [10/Apr/2026 07:37:21] "POST /incoming/sms HTTP/1.1" 200 -
+2026-04-10 07:43:21,142 [INFO]  * Detected change in 'D:\\Projects\\BridgeUp\\AfricasTalking\\callback_app.py', reloading
+2026-04-10 07:43:21,473 [INFO]  * Restarting with stat
+2026-04-10 07:43:24,011 [WARNING]  * Debugger is active!
+2026-04-10 07:43:24,018 [INFO]  * Debugger PIN: 581-262-269
+2026-04-10 07:44:36,395 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-10 07:44:36,396 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-10 07:44:36,397 [INFO]  * Restarting with stat
+2026-04-10 07:44:38,482 [WARNING]  * Debugger is active!
+2026-04-10 07:44:38,487 [INFO]  * Debugger PIN: 581-262-269
+2026-04-10 07:44:47,578 [INFO] Incoming SMS from +250788285524: Hey OPSYNTH, why is automation important for logistics in Toronto?
+2026-04-10 07:44:47,579 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-10 07:44:55,560 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-10 07:44:55,566 [INFO] AI Response for +250788285524: Automation offsets Toronto's high labor costs and traffic delays, boosting speed and accuracy to keep the GTA's supply chain competitive.
+2026-04-10 07:44:55,567 [ERROR] Africa's Talking Gateway Error: name 'sms' is not defined
+2026-04-10 07:44:55,568 [INFO] 127.0.0.1 - - [10/Apr/2026 07:44:55] "POST /incoming/sms HTTP/1.1" 200 -
+2026-04-10 07:51:03,628 [INFO]  * Detected change in 'D:\\Projects\\BridgeUp\\AfricasTalking\\callback_app.py', reloading
+2026-04-10 07:51:03,994 [INFO]  * Restarting with stat
+2026-04-10 07:51:06,791 [WARNING]  * Debugger is active!
+2026-04-10 07:51:06,798 [INFO]  * Debugger PIN: 581-262-269
+2026-04-10 07:52:41,218 [INFO]  * Detected change in 'D:\\Projects\\BridgeUp\\AfricasTalking\\callback_app.py', reloading
+2026-04-10 07:52:41,504 [INFO]  * Restarting with stat
+2026-04-10 08:11:23,519 [INFO] ✅ Services successfully initialized.
+2026-04-10 08:11:23,720 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-10 08:11:23,720 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-10 08:11:23,722 [INFO]  * Restarting with stat
+2026-04-10 08:11:25,768 [INFO] ✅ Services successfully initialized.
+2026-04-10 08:11:25,785 [WARNING]  * Debugger is active!
+2026-04-10 08:11:25,797 [INFO]  * Debugger PIN: 581-262-269
+2026-04-10 08:11:57,488 [INFO] 📩 Incoming from +250788285524: Hey OPSYNTH, why is automation important for logistics in Toronto?
+2026-04-10 08:11:57,489 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-10 08:12:00,547 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-10 08:12:00,672 [INFO] 🤖 AI Response for +250788285524: Toronto logistics needs automation to counter high labor/land costs & gridlock. It boosts GTA speed, accuracy & scalability for booming e-commerce.
+2026-04-10 08:12:01,402 [ERROR] ⚠️ Processing Error: HTTPSConnectionPool(host='api.sandbox.africastalking.com', port=443): Max retries exceeded with url: /version1/messaging (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)')))
+2026-04-10 08:12:01,404 [INFO] 127.0.0.1 - - [10/Apr/2026 08:12:01] "POST /incoming/sms HTTP/1.1" 200 -
+2026-04-10 08:17:49,379 [INFO]  * Detected change in 'D:\\Projects\\BridgeUp\\AfricasTalking\\callback_app.py', reloading
+2026-04-10 08:17:49,664 [INFO]  * Restarting with stat
+2026-04-10 08:17:52,390 [INFO] ✅ Services successfully initialized.
+2026-04-10 08:17:52,407 [WARNING]  * Debugger is active!
+2026-04-10 08:17:52,417 [INFO]  * Debugger PIN: 581-262-269
+2026-04-10 08:22:19,317 [INFO]  * Detected change in 'D:\\Projects\\BridgeUp\\AfricasTalking\\callback_app.py', reloading
+2026-04-10 08:22:19,665 [INFO]  * Restarting with stat
+2026-04-10 08:22:22,195 [INFO] ✅ Services successfully initialized.
+2026-04-10 08:22:22,218 [WARNING]  * Debugger is active!
+2026-04-10 08:22:22,225 [INFO]  * Debugger PIN: 581-262-269
+2026-04-10 08:22:34,787 [INFO]  * Detected change in 'D:\\Projects\\BridgeUp\\AfricasTalking\\callback_app.py', reloading
+2026-04-10 08:22:35,032 [INFO]  * Restarting with stat
+2026-04-10 08:22:37,354 [INFO] ✅ Services successfully initialized.
+2026-04-10 08:22:37,372 [WARNING]  * Debugger is active!
+2026-04-10 08:22:37,377 [INFO]  * Debugger PIN: 581-262-269
+2026-04-10 08:27:19,975 [INFO] ✅ Services successfully initialized.
+2026-04-10 08:27:20,015 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-10 08:27:20,015 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-10 08:27:20,016 [INFO]  * Restarting with stat
+2026-04-10 08:27:22,093 [INFO] ✅ Services successfully initialized.
+2026-04-10 08:27:22,119 [WARNING]  * Debugger is active!
+2026-04-10 08:27:22,125 [INFO]  * Debugger PIN: 581-262-269
+2026-04-10 08:27:30,753 [INFO] 📩 Incoming from +250788285524: Hey OPSYNTH, why is automation important for logistics in Toronto?
+2026-04-10 08:27:30,754 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-10 08:27:32,449 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-04-10 08:27:32,455 [ERROR] ⚠️ AI Processing Error: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+2026-04-10 08:27:32,543 [INFO] 127.0.0.1 - - [10/Apr/2026 08:27:32] "POST /incoming/sms HTTP/1.1" 200 -
+2026-04-10 08:28:30,918 [INFO] 📩 Incoming from +250788285524: Hey OPSYNTH, why is automation important for logistics in Toronto?
+2026-04-10 08:28:30,919 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-10 08:28:33,782 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-10 08:28:33,791 [INFO] 🤖 AI Response: Automation tackles Toronto's gridlock & high labor costs. It speeds up last-mile delivery, cuts errors, and keeps GTA logistics competitive.
+2026-04-10 08:28:34,335 [ERROR] ❌ AT Gateway SSL/Network Error: HTTPSConnectionPool(host='api.sandbox.africastalking.com', port=443): Max retries exceeded with url: /version1/messaging (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)')))
+2026-04-10 08:28:34,760 [INFO] 127.0.0.1 - - [10/Apr/2026 08:28:34] "POST /incoming/sms HTTP/1.1" 200 -
+2026-04-10 08:28:50,264 [INFO] 📩 Incoming from +250788285524: Hey OPSYNTH, why is automation important for logistics in Toronto?
+2026-04-10 08:28:50,264 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-10 08:28:53,067 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-04-10 08:28:53,068 [ERROR] ⚠️ AI Processing Error: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+2026-04-10 08:28:53,068 [INFO] 127.0.0.1 - - [10/Apr/2026 08:28:53] "POST /incoming/sms HTTP/1.1" 200 -
+2026-04-10 08:42:07,434 [INFO] ✅ Services fully initialized and SSL context relaxed.
+2026-04-10 08:42:07,463 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-10 08:42:07,463 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-10 08:42:07,466 [INFO]  * Restarting with stat
+2026-04-10 08:42:09,516 [INFO] ✅ Services fully initialized and SSL context relaxed.
+2026-04-10 08:42:09,534 [WARNING]  * Debugger is active!
+2026-04-10 08:42:09,545 [INFO]  * Debugger PIN: 581-262-269
+2026-04-10 08:42:29,554 [INFO] 📩 From +250788285524: Hey OPSYNTH, why is automation important for logistics in Toronto?
+2026-04-10 08:42:29,557 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-10 08:42:37,131 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-04-10 08:42:37,132 [ERROR] ⚠️ NLP Processing Error: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+2026-04-10 08:42:37,132 [INFO] 127.0.0.1 - - [10/Apr/2026 08:42:37] "POST /incoming/sms HTTP/1.1" 200 -
+2026-04-10 08:43:36,824 [INFO] 📩 From +250788285524: Hey OPSYNTH, why is automation important for logistics in Toronto?
+2026-04-10 08:43:36,825 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-10 08:43:51,789 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-10 08:43:51,793 [INFO] 🤖 AI Generated: Automation beats Toronto gridlock, slashes costs, and boosts speed. It’s vital for scaling and staying competitive across the GTA.
+2026-04-10 08:43:52,411 [ERROR] ❌ SMS Delivery Error: HTTPSConnectionPool(host='api.sandbox.africastalking.com', port=443): Max retries exceeded with url: /version1/messaging (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)')))
+2026-04-10 08:43:52,414 [INFO] 127.0.0.1 - - [10/Apr/2026 08:43:52] "POST /incoming/sms HTTP/1.1" 200 -
+2026-04-10 08:50:07,885 [INFO] ✅ Services fully initialized with HTTP Sandbox Override.
+2026-04-10 08:50:07,914 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-10 08:50:07,914 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-10 08:50:07,917 [INFO]  * Restarting with stat
+2026-04-10 08:50:10,297 [INFO] ✅ Services fully initialized with HTTP Sandbox Override.
+2026-04-10 08:50:10,316 [WARNING]  * Debugger is active!
+2026-04-10 08:50:10,323 [INFO]  * Debugger PIN: 581-262-269
+2026-04-10 08:50:14,637 [INFO] 📩 Incoming from +250788285524: Hey OPSYNTH, why is automation important for logistics in Toronto?
+2026-04-10 08:50:14,637 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-10 08:51:00,902 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-10 08:51:00,904 [INFO] 🤖 AI Generated: Automation scales speed, slashes errors, and beats GTA traffic. It’s vital for staying competitive in Toronto's high-cost, high-demand logistics market.
+2026-04-10 08:51:01,451 [ERROR] ❌ SMS Delivery Error: HTTPSConnectionPool(host='api.sandbox.africastalking.com', port=443): Max retries exceeded with url: /version1/messaging (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)')))
+2026-04-10 08:51:01,452 [INFO] 127.0.0.1 - - [10/Apr/2026 08:51:01] "POST /incoming/sms HTTP/1.1" 200 -
+2026-04-10 08:51:48,447 [INFO] 📩 Incoming from +250788285524: Hey OPSYNTH, why is automation important for logistics in Toronto?
+2026-04-10 08:51:48,448 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-10 08:52:05,205 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-10 08:52:05,214 [INFO] 🤖 AI Generated: Automation scales GTA ops, cuts costs, and bypasses 401 congestion. It’s vital for speed and accuracy in Toronto’s high-demand logistics market.
+2026-04-10 08:52:05,876 [ERROR] ❌ SMS Delivery Error: HTTPSConnectionPool(host='api.sandbox.africastalking.com', port=443): Max retries exceeded with url: /version1/messaging (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1006)')))
+2026-04-10 08:52:05,878 [INFO] 127.0.0.1 - - [10/Apr/2026 08:52:05] "POST /incoming/sms HTTP/1.1" 200 -
+2026-04-10 08:56:27,433 [INFO]  * Detected change in 'D:\\Projects\\BridgeUp\\AfricasTalking\\callback_app.py', reloading
+2026-04-10 08:56:27,736 [INFO]  * Restarting with stat
+2026-04-10 08:56:30,135 [INFO] ✅ Services fully initialized with HTTP Sandbox Override.
+2026-04-10 08:56:30,168 [WARNING]  * Debugger is active!
+2026-04-10 08:56:30,178 [INFO]  * Debugger PIN: 581-262-269
+2026-04-10 08:57:39,434 [INFO] ✅ Services fully initialized with HTTP Sandbox Override.
+2026-04-10 08:57:39,465 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-10 08:57:39,465 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-10 08:57:39,467 [INFO]  * Restarting with stat
+2026-04-10 08:57:41,792 [INFO] ✅ Services fully initialized with HTTP Sandbox Override.
+2026-04-10 08:57:41,820 [WARNING]  * Debugger is active!
+2026-04-10 08:57:41,828 [INFO]  * Debugger PIN: 581-262-269
+2026-04-10 08:57:44,800 [INFO] 📩 Incoming from +250788285524: Hey OPSYNTH, why is automation important for logistics in Toronto?
+2026-04-10 08:57:44,802 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-10 08:57:45,373 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-04-10 08:57:45,375 [ERROR] ⚠️ NLP/Gemini Error: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+2026-04-10 08:57:45,380 [INFO] 127.0.0.1 - - [10/Apr/2026 08:57:45] "POST /incoming/sms HTTP/1.1" 200 -
+2026-04-10 08:59:53,456 [INFO] ✅ Services fully initialized with HTTP Sandbox Override.
+2026-04-10 08:59:53,487 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-10 08:59:53,488 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-10 08:59:53,490 [INFO]  * Restarting with stat
+2026-04-10 08:59:55,558 [INFO] ✅ Services fully initialized with HTTP Sandbox Override.
+2026-04-10 08:59:55,577 [WARNING]  * Debugger is active!
+2026-04-10 08:59:55,582 [INFO]  * Debugger PIN: 581-262-269
+2026-04-10 09:00:02,520 [INFO] 📩 Incoming from +250788285524: Hey OPSYNTH, why is automation important for logistics in Toronto?
+2026-04-10 09:00:02,520 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-10 09:00:20,338 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-10 09:00:20,339 [INFO] 🤖 AI Generated: Automation beats GTA traffic, cuts costs, and speeds up delivery. Essential for scaling and staying competitive in Toronto's fast market.
+2026-04-10 09:00:21,114 [INFO] 📡 DIRECT SUCCESS: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: CAD 0.0227 Message parts: 1', 'Recipients': [{'cost': 'RWF 14.0000', 'messageId': 'ATXid_99b57d3768086fb2c819f434811495b5', 'number': '+250788285524', 'status': 'Success', 'statusCode': 101}]}}
+2026-04-10 09:00:21,120 [INFO] 127.0.0.1 - - [10/Apr/2026 09:00:21] "POST /incoming/sms HTTP/1.1" 200 -
+2026-04-10 09:00:56,535 [INFO] 📩 Incoming from +250788285524: Hey OPSYNTH, why is automation important for logistics in Toronto?
+2026-04-10 09:00:56,536 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-10 09:01:29,617 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-10 09:01:29,625 [INFO] 🤖 AI Generated: Automation beats GTA gridlock, cuts costs, and optimizes 401 routing. It’s the only way to scale and meet Toronto’s fast-paced delivery demands.
+2026-04-10 09:01:32,600 [INFO] 📡 DIRECT SUCCESS: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: CAD 0.0227 Message parts: 1', 'Recipients': [{'cost': 'RWF 14.0000', 'messageId': 'ATXid_44796a5049e5206c2cca0167888ad0bc', 'number': '+250788285524', 'status': 'Success', 'statusCode': 101}]}}
+2026-04-10 09:01:32,606 [INFO] 127.0.0.1 - - [10/Apr/2026 09:01:32] "POST /incoming/sms HTTP/1.1" 200 -
+2026-04-10 09:02:33,992 [INFO] 📊 Report: ATXid_44796a5049e5206c2cca0167888ad0bc is Failed
+2026-04-10 09:02:33,995 [INFO] 127.0.0.1 - - [10/Apr/2026 09:02:33] "POST /callbacks/sms HTTP/1.1" 200 -
+2026-04-10 09:05:06,816 [INFO] ✅ OPSYNTH Services Initialized Successfully.
+2026-04-10 09:05:06,866 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-10 09:05:06,867 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-10 09:05:06,869 [INFO]  * Restarting with stat
+2026-04-10 09:05:08,995 [INFO] ✅ OPSYNTH Services Initialized Successfully.
+2026-04-10 09:05:09,013 [WARNING]  * Debugger is active!
+2026-04-10 09:05:09,039 [INFO]  * Debugger PIN: 581-262-269
+2026-04-10 09:05:56,434 [INFO] ✅ OPSYNTH Services Initialized Successfully.
+2026-04-10 09:05:56,463 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-10 09:05:56,463 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-10 09:05:56,465 [INFO]  * Restarting with stat
+2026-04-10 09:05:58,615 [INFO] ✅ OPSYNTH Services Initialized Successfully.
+2026-04-10 09:05:58,631 [WARNING]  * Debugger is active!
+2026-04-10 09:05:58,641 [INFO]  * Debugger PIN: 581-262-269
+2026-04-10 09:06:08,750 [INFO] 📩 Incoming from +250788285524: Hey OPSYNTH, why is automation important for logistics in Toronto?
+2026-04-10 09:06:08,752 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-10 09:06:35,158 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-04-10 09:06:35,183 [ERROR] ⚠️ Gemini processing error: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+2026-04-10 09:06:35,190 [INFO] 127.0.0.1 - - [10/Apr/2026 09:06:35] "POST /incoming/sms HTTP/1.1" 200 -
+2026-04-10 09:07:08,898 [INFO] 📩 Incoming from +250788285524: Hey OPSYNTH, why is automation important for logistics in Toronto?
+2026-04-10 09:07:08,899 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-10 09:07:11,798 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-10 09:07:11,804 [INFO] 🤖 AI Logic Result: Automation optimizes routes and lowers costs, helping navigate Toronto's traffic and high demand for faster, more accurate GTA deliveries.
+2026-04-10 09:07:12,514 [INFO] 📡 Gateway Success: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: CAD 0.0227 Message parts: 1', 'Recipients': [{'cost': 'RWF 14.0000', 'messageId': 'ATXid_ccd8f503a7a4019124da4e3e904f305e', 'number': '+250788285524', 'status': 'Success', 'statusCode': 101}]}}
+2026-04-10 09:07:12,520 [INFO] 127.0.0.1 - - [10/Apr/2026 09:07:12] "POST /incoming/sms HTTP/1.1" 200 -
+2026-04-10 09:07:54,820 [INFO] 📩 Incoming from +250788285524: Hey OPSYNTH, why is automation important for logistics in Toronto?
+2026-04-10 09:07:54,822 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-10 09:08:53,120 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-10 09:08:53,121 [INFO] 🤖 AI Logic Result: Automation optimizes GTA routes, lowers costs, and ensures speed amid high demand. It’s vital for scaling efficient urban distribution in Toronto.
+2026-04-10 09:08:53,888 [INFO] 📡 Gateway Success: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: CAD 0.0227 Message parts: 1', 'Recipients': [{'cost': 'RWF 14.0000', 'messageId': 'ATXid_70036148607dae2435244697b4be70d4', 'number': '+250788285524', 'status': 'Success', 'statusCode': 101}]}}
+2026-04-10 09:08:53,890 [INFO] 127.0.0.1 - - [10/Apr/2026 09:08:53] "POST /incoming/sms HTTP/1.1" 200 -
+2026-04-10 09:09:54,493 [INFO] 📊 Delivery Report: ATXid_70036148607dae2435244697b4be70d4 -> Failed
+2026-04-10 09:09:54,494 [INFO] 127.0.0.1 - - [10/Apr/2026 09:09:54] "POST /callbacks/sms HTTP/1.1" 200 -
+2026-04-10 09:18:45,331 [INFO] ✅ OPSYNTH Services Initialized Successfully.
+2026-04-10 09:18:45,358 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-10 09:18:45,358 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-10 09:18:45,362 [INFO]  * Restarting with stat
+2026-04-10 09:18:47,541 [INFO] ✅ OPSYNTH Services Initialized Successfully.
+2026-04-10 09:18:47,566 [WARNING]  * Debugger is active!
+2026-04-10 09:18:47,574 [INFO]  * Debugger PIN: 581-262-269
+2026-04-10 09:19:09,120 [INFO] 📩 Incoming from +250788285524: Hey OPSYNTH, why is automation important for logistics in Toronto?
+2026-04-10 09:19:09,123 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-10 09:20:27,272 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-10 09:20:27,275 [INFO] 🤖 AI Logic Result: Automation optimizes Toronto's supply chain by reducing transit times, cutting costs, and streamlining last-mile delivery across the GTA’s dense urban grid.
+2026-04-10 09:20:27,979 [INFO] 📡 Gateway Success: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: CAD 0.0227 Message parts: 1', 'Recipients': [{'cost': 'RWF 14.0000', 'messageId': 'ATXid_38af67c7215e1e62358bd6263090342b', 'number': '+250788285524', 'status': 'Success', 'statusCode': 101}]}}
+2026-04-10 09:20:27,982 [INFO] 127.0.0.1 - - [10/Apr/2026 09:20:27] "POST /incoming/sms HTTP/1.1" 200 -
+2026-04-10 09:21:28,382 [INFO] 📊 Delivery Report: ATXid_38af67c7215e1e62358bd6263090342b -> Failed
+2026-04-10 09:21:28,385 [INFO] 127.0.0.1 - - [10/Apr/2026 09:21:28] "POST /callbacks/sms HTTP/1.1" 200 -
+2026-04-10 09:23:43,476 [INFO] 📩 Incoming from +250788285524: Nigute ikoranabuhanga ryifashisha ubwenge buhangano ryafasha umuhinzi n'umworozi wo mucyaro mu Rwanda?
+2026-04-10 09:23:43,478 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-10 09:24:03,354 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-04-10 09:24:03,357 [WARNING] ⚠️ Gemini busy (503). Retrying in 1s...
+2026-04-10 09:24:04,358 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-10 09:24:49,830 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-10 09:24:49,832 [INFO] 🤖 AI Logic Result: AI ifasha mu iteganyagihe, kuvura amatungo, no guhuza abahinzi n'amasoko binyuze mu bwikorezi bugezweho. OPSYNTH irabashyigikiye.
+2026-04-10 09:24:50,562 [INFO] 📡 Gateway Success: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: CAD 0.0227 Message parts: 1', 'Recipients': [{'cost': 'RWF 14.0000', 'messageId': 'ATXid_95b894899c7864aa837cf8c27dd77c3d', 'number': '+250788285524', 'status': 'Success', 'statusCode': 101}]}}
+2026-04-10 09:24:50,565 [INFO] 127.0.0.1 - - [10/Apr/2026 09:24:50] "POST /incoming/sms HTTP/1.1" 200 -
+2026-04-10 09:25:50,900 [INFO] 📊 Delivery Report: ATXid_95b894899c7864aa837cf8c27dd77c3d -> Failed
+2026-04-10 09:25:50,901 [INFO] 127.0.0.1 - - [10/Apr/2026 09:25:50] "POST /callbacks/sms HTTP/1.1" 200 -
+2026-04-10 21:57:23,620 [INFO] ✅ OPSYNTH Services Initialized Successfully.
+2026-04-10 21:57:23,953 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-10 21:57:23,953 [INFO] [33mPress CTRL+C to quit[0m
+2026-04-10 21:57:23,964 [INFO]  * Restarting with stat
+2026-04-10 21:57:26,115 [INFO] ✅ OPSYNTH Services Initialized Successfully.
+2026-04-10 21:57:26,140 [WARNING]  * Debugger is active!
+2026-04-10 21:57:26,150 [INFO]  * Debugger PIN: 581-262-269
+2026-04-10 21:57:35,865 [INFO] 📩 From +250788285524: Hey OPSYNTH, why is automation important for logistics in Toronto?
+2026-04-10 21:57:35,867 [INFO] AFC is enabled with max remote calls: 10.
+2026-04-10 21:57:48,345 [INFO] HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-10 21:57:48,350 [INFO] 🤖 AI Reply: Automation scales Toronto logistics by mitigating traffic delays and high costs. It boosts speed and ensures reliable last-mile delivery in the GTA.
+2026-04-10 21:57:48,926 [INFO] 📡 Gateway Success: {'SMSMessageData': {'Message': 'Sent to 1/1 Total Cost: CAD 0.0227 Message parts: 1', 'Recipients': [{'cost': 'RWF 14.0000', 'messageId': 'ATXid_eaab279e7b466a607086c42d6795b695', 'number': '+250788285524', 'status': 'Success', 'statusCode': 101}]}}
+2026-04-10 21:57:48,930 [INFO] 127.0.0.1 - - [10/Apr/2026 21:57:48] "POST /incoming/sms HTTP/1.1" 200 -
+2026-04-10 21:58:50,273 [INFO] 📊 Delivery Report: ATXid_eaab279e7b466a607086c42d6795b695 -> Failed
+2026-04-10 21:58:50,274 [INFO] 127.0.0.1 - - [10/Apr/2026 21:58:50] "POST /callbacks/sms HTTP/1.1" 200 -
