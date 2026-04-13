@@ -31,24 +31,27 @@ logger = logging.getLogger(__name__)
 
 # 3. SERVICE INITIALIZATION
 try:
-    # Use consistent key naming
-    GEMINI_KEY = os.getenv("AT_GEMINI_API_KEY") or os.getenv("AT_GEMINI_API_Key")
+    GEMINI_KEY = os.getenv("AT_GEMINI_API_KEY")
     ai_client = genai.Client(api_key=GEMINI_KEY)
     
-    # Africa's Talking Config
-    AT_USERNAME = os.getenv("AT_USERNAME", "sandbox")
+    AT_USERNAME = os.getenv("AT_USERNAME") # Should be your real username now
     AT_API_KEY = os.getenv("AT_API_KEY")
-    AT_SMS_URL = "http://api.sandbox.africastalking.com/version1/messaging"
-    SHORT_CODE = "9161"
+    
+    # PRODUCTION URL (Change this from api.sandbox to api)
+    AT_SMS_URL = "https://api.africastalking.com/version1/messaging"
+    
+    # Update this to your new production number
+    SHORT_CODE = "+250229200506" 
 
-    logger.info("✅ OPSYNTH Services Initialized Successfully.")
+    logger.info("✅ OPSYNTH Production Services Initialized.")
 except Exception as e:
     logger.error(f"❌ Initialization Failure: {e}")
     sys.exit(1)
 
+# 4. FLASK APP INITIALIZATION
 app = Flask(__name__)
 
-# 4. BUSINESS LOGIC LAYER
+# 5. BUSINESS LOGIC LAYER
 
 def relay_sms_direct(recipient, message):
     """Handles outbound SMS delivery via Africa's Talking Gateway."""
@@ -94,7 +97,7 @@ def get_ai_response(content_input, is_voice=False):
         logger.error(f"❌ Gemini AI Error: {e}")
         return "Nyamuneka mwongere mugerageze mukanya." # Kinyarwanda: Please try again later.
 
-# 5. WEBHOOK ROUTES
+# 6. WEBHOOK ROUTES
 
 @app.route('/incoming/sms', methods=['POST'])
 def handle_sms():
