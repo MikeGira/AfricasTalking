@@ -8,6 +8,8 @@ import time
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
 from google import genai
+from google.genai import types
+from google.api_core import exceptions
 
 # 1. ENVIRONMENT & SSL CONFIGURATION
 load_dotenv()
@@ -34,13 +36,9 @@ try:
     GEMINI_KEY = os.getenv("AT_GEMINI_API_KEY")
     ai_client = genai.Client(api_key=GEMINI_KEY)
     
-    AT_USERNAME = os.getenv("AT_USERNAME") # Should be your real username now
+    AT_USERNAME = os.getenv("AT_USERNAME")
     AT_API_KEY = os.getenv("AT_API_KEY")
-    
-    # PRODUCTION URL (Change this from api.sandbox to api)
     AT_SMS_URL = "https://api.africastalking.com/version1/messaging"
-    
-    # Update this to your new production number
     SHORT_CODE = "+250229200506" 
 
     logger.info("✅ OPSYNTH Production Services Initialized.")
@@ -67,7 +65,6 @@ def relay_sms_direct(recipient, message):
         "apiKey": AT_API_KEY
     }
     try:
-        # verify=False remains for local dev compatibility
         response = requests.post(AT_SMS_URL, headers=headers, data=payload, verify=False)
         response.raise_for_status()
         logger.info(f"📡 SMS Gateway Success: {response.json()}")
@@ -87,15 +84,19 @@ def get_ai_response(content_input, is_voice=False):
         system_prompt += "This is an SMS. Keep it under 160 characters. Use the user's language."
 
     try:
+        # TEMPORARY FIX: Switched to gemini-1.5-flash to bypass 2.0 daily limits
         response = ai_client.models.generate_content(
-            model="gemini-3-flash-preview",
+            model="gemini-1.5-flash", 
             contents=content_input,
-            config={"system_instruction": system_prompt}
+            config=types.GenerateContentConfig(system_instruction=system_prompt)
         )
         return response.text.replace('\n', ' ').strip()
+    except exceptions.ResourceExhausted:
+        logger.warning("⚠️ Quota exceeded. Sending fallback message.")
+        return "Turi kwakira abantu benshi, mwongere mugerageze mukanya." 
     except Exception as e:
         logger.error(f"❌ Gemini AI Error: {e}")
-        return "Nyamuneka mwongere mugerageze mukanya." # Kinyarwanda: Please try again later.
+        return "Nyamuneka mwongere mugerageze mukanya."
 
 # 6. WEBHOOK ROUTES
 
@@ -115,7 +116,6 @@ def handle_voice_call():
     caller = request.form.get('callerNumber')
     logger.info(f"📞 Incoming call from: {caller}")
     
-    # AT-XML greeting and instruction to record
     xml_response = f"""<?xml version="1.0" encoding="UTF-8"?>
     <Response>
         <Say voice="man">Muraho! OPSYNTH iragufasha iki uyu munsi? Nyuma y'ijwi, vuga icyo wifuza hanyuma ukande urwego.</Say>
@@ -126,17 +126,24 @@ def handle_voice_call():
 @app.route('/voice/process', methods=['POST'])
 def handle_voice_audio():
     audio_url = request.form.get('recordingUrl')
+    
+    # FIX: Handle GitHub 'blob' URLs to point to 'raw' content during testing
+    if "github.com" in audio_url and "/blob/" in audio_url:
+        audio_url = audio_url.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/")
+    
     logger.info(f"🎙️ Processing Voice Data: {audio_url}")
     
     try:
-        # Download the audio file
-        audio_data = requests.get(audio_url, verify=False).content
+        audio_response = requests.get(audio_url, verify=False)
+        audio_response.raise_for_status()
+        audio_data = audio_response.content
         
-        # Multimodal processing: Send bytes directly to Gemini
-        ai_reply = get_ai_response(
-            content_input=[{"mime_type": "audio/wav", "data": audio_data}, "Respond to this user's voice request."],
-            is_voice=True
-        )
+        content_input = [
+            types.Part.from_bytes(data=audio_data, mime_type="audio/wav"),
+            "Respond to this user's voice request."
+        ]
+        
+        ai_reply = get_ai_response(content_input, is_voice=True)
         
         xml_response = f"""<?xml version="1.0" encoding="UTF-8"?>
         <Response>
@@ -160,5 +167,4 @@ def add_ngrok_headers(response):
     return response
 
 if __name__ == '__main__':
-    # Threaded=True is critical for handling the recording download while staying responsive
     app.run(port=5000, debug=True, threaded=True)
